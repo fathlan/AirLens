@@ -1,0 +1,114 @@
+{
+  "profile": "lab",
+  "sources": [
+    "pm25vision",
+    "india_nepal"
+  ],
+  "data_fraction": 1.0,
+  "aqi_table": "EPA-454/B-24-002 (2024)",
+  "dibuang_saat_normalisasi": {
+    "pm25vision": {},
+    "india_nepal": {
+      "lokasi_india_label_tidak_jelas": 10069
+    }
+  },
+  "n_raw": {
+    "india_nepal": 2171,
+    "pm25vision": 11096
+  },
+  "dedup": {
+    "india_nepal": {
+      "sebelum": 2171,
+      "duplikat_persis": 3,
+      "near_duplicate": 1971,
+      "sesudah": 197
+    },
+    "pm25vision": {
+      "sebelum": 11096,
+      "duplikat_persis": 2,
+      "near_duplicate": 426,
+      "sesudah": 10668
+    }
+  },
+  "kualitas_ditolak": {
+    "india_nepal": {},
+    "pm25vision": {
+      "langit_tidak_terlihat": 15,
+      "terlalu_gelap": 9,
+      "terlalu_terang": 1
+    }
+  },
+  "class_merge": {
+    "hazardous": "very_unhealthy"
+  },
+  "distribusi_kelas": {
+    "per_dataset": {
+      "india_nepal / moderate": 36,
+      "india_nepal / unhealthy": 132,
+      "india_nepal / usg": 29,
+      "pm25vision / good": 1703,
+      "pm25vision / moderate": 3074,
+      "pm25vision / unhealthy": 1957,
+      "pm25vision / usg": 2273,
+      "pm25vision / very_unhealthy": 1636
+    },
+    "per_kota_atau_lokasi": {
+      "india_nepal / Biratnagar / moderate": 36,
+      "india_nepal / Biratnagar / unhealthy": 132,
+      "india_nepal / Biratnagar / usg": 29
+    },
+    "total": {
+      "good": 1703,
+      "moderate": 3110,
+      "usg": 2302,
+      "unhealthy": 2089,
+      "very_unhealthy": 1636
+    }
+  },
+  "sensitivitas_pm25vision": {
+    "label_berubah": 1036,
+    "total": 10643,
+    "perpindahan": {
+      "good / moderate": 684,
+      "unhealthy / very_unhealthy": 248,
+      "very_unhealthy / hazardous": 104
+    }
+  },
+  "split": {
+    "gambar": {
+      "test": 1615,
+      "train": 7515,
+      "val": 1710
+    },
+    "kelompok_lokasi": {
+      "test": 180,
+      "train": 861,
+      "val": 177
+    },
+    "per_kelas": {
+      "test / good": 256,
+      "test / moderate": 467,
+      "test / unhealthy": 313,
+      "test / usg": 346,
+      "test / very_unhealthy": 233,
+      "train / good": 1191,
+      "train / moderate": 2176,
+      "train / unhealthy": 1462,
+      "train / usg": 1610,
+      "train / very_unhealthy": 1076,
+      "val / good": 256,
+      "val / moderate": 467,
+      "val / unhealthy": 314,
+      "val / usg": 346,
+      "val / very_unhealthy": 327
+    },
+    "per_sumber": {
+      "test / pm25vision": 1615,
+      "train / india_nepal": 197,
+      "train / pm25vision": 7318,
+      "val / pm25vision": 1710
+    }
+  },
+  "data_version": "068682489f35ea11beb2bdb85b0898d5305a48862314dae68b66f80483b4fea4",
+  "n_final": 10840
+}
